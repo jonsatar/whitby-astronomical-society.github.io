@@ -1,0 +1,65 @@
+.quiz {
+  background: none;
+}
+/* center title */
+.quiz h1 {
+  text-align: center;
+}
+/* next and previous buttons */
+.quiz .button {
+  width: 79px;
+  height: 24px;
+  text-align: center;
+  float: right;
+  cursor: pointer;
+  background-color: #fff;
+  margin: 0 3px 0 3px;
+}
+/* remove link decorations to create a more of a button look */
+.quiz .button a {
+  line-height: 24px;
+  text-decoration: none;
+  color: #555;
+}
+/* set background color and effects */
+#container {
+  width: 49%;
+  background-color: #000033;
+  border-radius: 3px;
+  margin: auto;
+  padding: 49px 29px;
+
+  color: #fff;
+  box-shadow: 0 0 9px 0 #999;
+}
+/* remove bullets on list items to make room for the radio button for selection */
+.quiz ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 499px;
+}
+/* give each list item a contrast to the background */
+.quiz ul li {
+  padding: 5px;
+  display: inline-block;
+  background: #000068;
+  width: 199px;
+  margin: 9px;
+}
+@media (max-width: 900px) {
+  .quiz ul li {
+    display: block;
+  }
+}
+/* no need for previous button on the first question */
+#prev {
+  display: none;
+}
+#start {
+  display: none;
+  width: 100px;
+}
+input[type="radio"] {
+  cursor: pointer;
+}

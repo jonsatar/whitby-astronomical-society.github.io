@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contact Us</title>
+
+      <link rel="stylesheet" href="style/contact-form.css">
+
+         <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+         
+         <!-- load the header and footer using jquery at the onset of the page load -->
+         <script>
+            $(function () {
+               $("nav").load("html-partitions/nav.html");
+               $("footer").load("html-partitions/footer.html");
+            });
+         </script>
+
+         <!-- Google Font faimlies Trispace font -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <nav></nav>
+
+         <div class="contact-form">
+            <form>
+               <h1>Contact Us</h1>
+         
+               <div class="input-group">
+                  <label>Full Name</label>
+                  <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                  <!-- below commented out code is inserted by the javascript after satisfying the specified logic in te script file-->
+                  <!-- <span id="name-error">name is required</span> -->
+                  <span id="name-error"></span>
+               </div>
+         
+               <div class="input-group">
+                  <label>Phone No.</label>
+                  <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+                  <!-- below commented out code is inserted by the javascript after satisfying the specified logic in te script file-->
+                  <!-- <span id="phone-error">phone number is required</span> -->
+                  <span id="phone-error"></span>
+               </div>
+         
+               <div class="input-group">
+                  <label>Email Id</label>
+                  <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+                  <!-- below commented out code is inserted by the javascript after satisfying the specified logic in te script file-->
+                  <!-- <span id="email-error">email is required</span> -->
+                  <span id="email-error"></span>
+               </div>
+         
+               <div class="input-group">
+                  <label>Your Message</label>
+                  <textarea rows="5" placeholder="Enter your message" id="contact-message"
+                     onkeyup="validateMessage()"></textarea>
+                  <!-- below commented out code is inserted by the javascript after satisfying the specified logic in te script file-->
+                  <!-- <span id="message-error">message is required</span> -->
+                  <span id="message-error"></span>
+               </div>
+         
+               <!-- this return is valid, ignore warning -->
+               <button onclick="return validateForm()">Submit</button>
+               <!-- <span id="submit-error">please fix error</span> -->
+               <span id="submit-error"></span>
+         
+            </form>
+         </div>
+
+   <footer></footer>
+
+      <script src="script/contact-form.js"></script>
+</body>
+</html>

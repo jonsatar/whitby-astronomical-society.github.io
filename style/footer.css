@@ -1,0 +1,162 @@
+/* styling the global footer */
+
+/* scale the club logo on footer left */
+.footer-container img {
+  height: 99px;
+  width: auto;
+}
+
+/* create blue shade background with round left top corner */
+.footer-container {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    #00000d,
+    #000015,
+    #000022,
+    #000037,
+    #000059
+  );
+  color: #fff;
+  padding: 99px 0 29px;
+  border-top-left-radius: 124px;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+/* form a single footer row in the flex box model */
+.footer-row {
+  width: 83%;
+  display: flex;
+  margin: auto;
+
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* equivalent sized four columns */
+.footer-col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+/* narrow the middle two columns */
+.footer-col:nth-child(2),
+.footer-col:nth-child(3) {
+  flex-basis: 15%;
+}
+/* widen the logo column */
+.footer-logo {
+  width: 79px;
+  margin-bottom: 29px;
+}
+
+/* fix font of the title of each column */
+.footer-col h3 {
+  width: fit-content;
+  margin-bottom: 39px;
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+/* change telphone number font size */
+.footer-col h4 {
+  font-size: 14px;
+}
+
+/* email subscription stylings */
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 19px 0;
+}
+
+/* remove bullets on footer lists */
+footer ul li {
+  list-style: none;
+  margin-bottom: 13px;
+}
+
+/* remove underlink on linked lists */
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+/* align under flex box model and move up from the bottom keeping approtiate sizes between content */
+.footer-form {
+  padding-bottom: 14px;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 49px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-form .far {
+  font-size: 17px;
+  margin-right: 9px;
+}
+
+/* nearly fill input form and make clear */
+.footer-form input {
+  width: 99%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: #ccc;
+}
+
+.footer-form button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  outline: none;
+}
+
+.footer-form button .fas {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.footer-social-icons .fab {
+  width: 39px;
+  height: 39px;
+  list-style: 39px;
+  margin-right: 14px;
+  cursor: pointer;
+  border-radius: 49%;
+  text-align: center;
+
+  font-size: #000;
+}
+
+hr {
+  margin: 21px auto;
+  width: 91%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.copyright {
+  text-align: center;
+}
+
+/* responsive media queries for the small screen */
+@media (max-width: 700px) {
+  footer {
+    bottom: unset;
+  }
+  .footer-col {
+    flex-basis: 100%;
+  }
+
+  .footer-col:nth-child(2),
+  .footer-col:nth-child(3) {
+    flex-basis: 100%;
+  }
+}

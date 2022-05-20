@@ -1,0 +1,166 @@
+/* this css file styles appropriately the  circle slider present in the banner header in the about page as well as each click circle that performs the slide*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Trispace", sans-serif;
+}
+
+#circleslider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* to be inserted on changes from click in the javascript */
+  /* background-image: url(img/img-1.jpg); */
+  background-position: center;
+  background-size: cover;
+  transition: 1.75s;
+}
+
+/* centers the circle box */
+.circle-container {
+  position: absolute;
+  height: 450px;
+  width: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  font-family: "Trispace", sans-serif;
+}
+
+/* move thew ttwo circles to the same position and the center */
+/* the first gray circle is now hidden behind the second white circle */
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* the seocnd circle */
+#svgCircle {
+  /* approximate circumference of the specified  */
+  stroke-dasharray: 1249;
+  /* adjusting the offset traverse the arc of the circle with white */
+  stroke-dashoffset: 1249;
+  transition: 1s;
+}
+
+/* dividing into 5 regions 1256/5 = 251 that is 251, 502,753,1004,1256 */
+.circle-container span {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: #fff;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* get the dot position from the inspect console and place here */
+#first {
+  right: 165px;
+  bottom: 35px;
+}
+#second {
+  left: 54px;
+  bottom: 112px;
+}
+#third {
+  left: 67px;
+  top: 92px;
+}
+#fourth {
+  right: 149px;
+  top: 35px;
+}
+#fifth {
+  right: 25px;
+  top: 219px;
+}
+
+/* specify size of content */
+.circle-info-container {
+  width: 350px;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  text-align: center;
+  color: white;
+  transition: 1s;
+}
+/* fit the slider image in the circle */
+.info img {
+  width: 80px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.circle-info-container p {
+  margin: 20px 0;
+  color: white;
+  line-height: 25px;
+}
+
+.info {
+  height: 450px;
+}
+
+.about-us {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.about-row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+  .about-row {
+    flex-direction: column;
+  }
+}
+
+.about-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.about-col img {
+  width: 100%;
+}
+
+.about-col h2 {
+  padding-top: 0;
+}
+
+.about-col p {
+  padding: 15px 0 25px;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  /* change the cursor */
+  cursor: pointer;
+}
+
+/* when the cursor hovers over the button */
+.hero-btn:hover {
+  border: 1px solid orangered;
+  background: orangered;
+  transition: 1s;
+}

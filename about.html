@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>About Us</title>
+   <link rel="stylesheet" href="style/circular-slider.css">
+   <link rel="stylesheet" href="style/about.css">
+   <link rel="stylesheet" href="style/accordion.css">
+   <link rel="stylesheet" href="style/news.css">
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+
+   <!-- bootstrap CSS link -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+      <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+   
+   <!-- load the header and footer using jquery at the onset of the page load -->
+   <script>
+      $(function () {
+         $("nav").load("html-partitions/nav.html");
+         $("footer").load("html-partitions/footer.html");
+      });
+   </script>
+
+   <!-- Google Font families Trispace font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<nav>
+   <!-- loaded by the jquery -->
+</nav>
+<section id="circleslider">
+   <div class="circle-container">
+      <!-- create the svg file -->
+      <svg height="398" width="398">
+         <!-- circular parameters to match both desktop and mobile versions here -->
+         <circle r="197" cx="197" cy="197" stroke-width="3px" stroke="gray" fill="none" />
+      </svg>
+      <svg height="398" width="398">
+         <circle r="197" cx="197" cy="197" stroke-width="3px" stroke="white" fill="none" id="svgCircle" />
+      </svg>
+      <div>
+         <!-- span elements to be styled into clickable buttons -->
+         <span id="first"></span>
+         <span id="second"></span>
+         <span id="third"></span>
+         <span id="fourth"></span>
+         <span id="fifth"></span>
+      </div>
+      <!-- content to slide through -->
+      <div class="circle-info-container" id="circleInfoContainer">
+         <!-- first slide content -->
+         <div class="info">
+            <h1>About Us</h1>
+            <br>
+            <p>Our purpose is to spread knowledge and appreciation of Space.</p>
+            <br>
+            <a href="#purpose" class="hero-btn">Read More</a>
+         </div>
+         <!-- second slide content -->
+         <div class="info">
+            <h1>Outreach</h1>
+            <br>
+            <p>We reach a lot more than just our club members.</p>
+            <br>
+            <a href="#outreach" class="hero-btn">Explore Now</a>
+         </div>
+         <!-- third slide content -->
+         <div class="info">
+            <h1>Community</h1>
+            <br>
+            <p>Build a sense of community and learn best.</p>
+            <br>
+            <a href="#community" class="hero-btn">Explore Now</a>
+         </div>
+         <!-- fourth slide content -->
+         <div class="info">
+            <h1>FAQs</h1>
+            <br>
+            <p>Read about some common questions that you may have.</p>
+            <br>
+            <a href="#faq" class="hero-btn">Explore Now</a>
+         </div>
+         <!-- fifth slide content -->
+         <div class="info">
+            <h1>Contact Us</h1>
+            <br>
+            <p>Ask us any questions that you might have!</p>
+            <br>
+            <a href="contact.html" class="hero-btn">Explore Now</a>
+         </div>
+      </div>
+      </div>
+   </section>
+
+
+   <section class="about-us">
+      <!-- more details on first slide content -->
+      <div class="about-row" id="purpose">
+         <div class="about-col">
+            <h2>Our purpose</h2>
+            <p>We aim to bring a more thorough understanding and appreciation for the Cosmos. We learn and appreciate best when we have a sense of community. Although from a different time and field, John D. Rockenfeller once said that "A friendship founded on business is better than a business founded on friendship". 
+            </p>
+         </div>
+         <div class="about-col">
+            <!-- style the same way as the hover effect from home page on news bulletins -->
+                     <div class="news-col">
+                        <img src="media/about/astronaut-friends.jpg" alt="Astronauts sit together">
+                        <div class="news-layer">
+                        </div>
+                     </div>
+         </div>
+      </div>
+      <!-- more details on second slide content -->
+      <div class="about-row" id="community">
+         <div class="about-col">
+            <h2>Community</h2>
+            <p>A sense of community is critical for the development of any human being let alone any person that is interested in deverloping a skill set. Begin your journey with us and get a few pointers towards a head start and begin either a possible career or simply just remain a hobbyist.
+            </p>
+
+            
+         </div>
+         <div class="about-col">
+            <!-- style the same way as the hover effect from home page on news bulletins -->
+                     <div class="news-col">
+                        <img src="media/about/group-speech.jpg" alt="Man gives speech to group">
+                        <div class="news-layer">
+                        </div>
+                     </div>
+         </div>
+      </div>
+
+      <!-- more details on third slide content -->
+      <div class="about-row" id="outreach">
+         <div class="about-col">
+            <h2>Outreach</h2>
+            <p>With various programs set to high school and elementary school outreach programs, gain some experience teaching and engaging with others in an authoritative position. We'll show you all the steps if you might be nervous and can prepare you with all sorts of materials to make your presentation and engagement a success. 
+            </p>
+
+         </div>
+         <div class="about-col">
+            <!-- style the same way as the hover effect from home page on news bulletins -->
+                     <div class="news-col">
+                        <img src="media/about/young-astronauts.jpg" alt="Child astronauts play on ladder">
+                        <div class="news-layer">
+                        </div>
+                     </div>
+         </div>
+
+      </div>
+
+      <!-- more details on fourth slide contact -->
+            <div class="about-row" id="have-fun">
+               <div class="about-col">
+                  <h2>Just For Having Fun</h2>
+                  <p>There are many social nights such as Stargazing Saturdays.Also some pub nights that all become available to you upon membership. It's a great place to casually get to know other club members and further build a sense of community. 
+                  </p>
+            
+               </div>
+               <div class="about-col">
+                  <!-- style the same way as the hover effect from home page on news bulletins -->
+                  <div class="news-col">
+                     <img src="media/about/mars-hitchhiker.jpg" alt="A man hitchikes to Mars on a roadway as joke.">
+                     <div class="news-layer">
+                     </div>
+                  </div>
+               </div>
+            
+            </div>
+   </section>
+   <!-- more deatils on fifth slide content in an accordion -->
+   <section class="accordion-section" id="faq">
+      <h1>Frequently Asked Questions</h1>
+      <div class="container">
+         <div class="row">
+            <!-- left side accordion -->
+            
+               <!--  begin default accordion accordion from the bootstrap website; this code is taken from there as well-->
+               <div class="accordion " id="accordionExample">
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                           How often do you meet?
+                        </button>
+                     </h2>
+                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <strong>Quite frequently but you can attend whenever you want, no pressure.</strong> Subscribing to our newsletter will enable you to access the members only events. We usually charge a small fee on location per event.
+                        </div>
+                     </div>
+                  </div>
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           Does it cost anything?
+                        </button>
+                     </h2>
+                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <strong>Club membership is free of charge.</strong> There are no fees to participate. We do, however, accept donations of any kind to assist with the day to day funding of the club. These include server costs for the website, some pizza nights, and brochures to promote the activities. 
+                        </div>
+                     </div>
+                  </div>
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           Who can join?
+                        </button>
+                     </h2>
+                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <strong>Absolutely anyone.</strong> We encourage a diverse range of participants and are adamant about growing our community as much as possible. The atmosphere is warm, inviting, and supportive. Our lounge is a safe space with no judgement or prerequisite knowledge required. 
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- end default accordion accordion from the bootstrap website -->
+            </div>
+
+      
+      </div>
+   </section>
+
+
+<footer>
+   <!-- loaded from the jquery -->
+</footer>
+
+   <script src="script/circular-slider-about.js"></script>
+
+   <!-- Javascript Bootstrap Bundle with Popper for the accordion-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

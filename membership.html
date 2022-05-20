@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Membership</title>
+   <link rel="stylesheet" href="style/membership.css">
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+   
+   <!-- load the header and footer using jquery at the onset of the page load -->
+   <script>
+      $(function () {
+         $("nav").load("html-partitions/nav.html");
+         $("footer").load("html-partitions/footer.html");
+      });
+   </script>
+
+   <!-- Google Font faimlies Trispace font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   
+   <nav>
+      <!-- loaded by the jquery -->
+   </nav>
+
+        
+         <div class="form-box">
+            <!-- button to toggle between the login and registration -->
+            <div class="button-box">
+               <div id="btn"></div>
+               <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+               <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+
+            <!-- login form -->
+            <form id="login" class="input-group">
+               <input type="text" class="input-field" placeholder="User Id" required>
+               <input type="text" class="input-field" placeholder="Enter Password" required>
+               <input type="checkbox" class="check-box"><span>Remember Password</span>
+               <button type="submit" class="submit-btn">Log In</button>
+            </form>
+            <!-- registration form -->
+            <form id="register" class="input-group">
+               <input type="text" class="input-field" placeholder="User Id" required>
+               <input type="email" class="input-field" placeholder="Email Id" required>
+               <input type="text" class="input-field" placeholder="Enter Password" required>
+               <input type="checkbox" class="check-box"><span>I agree to the terms and conditions.</span>
+               <button type="submit" class="submit-btn">Register</button>
+            </form>
+         </div>
+
+
+
+   <footer>
+      <!-- loaded by the jquery -->
+   </footer>
+
+      <script src="script/membership.js">
+      </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Navigation Partition</title>
+   <link rel="stylesheet" href="../style/nav.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+      <!-- Google Font faimlies Trispace font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@400;500;600&display=swap" rel="stylesheet">
+      
+</head>
+<body>
+   
+  <!-- 5 webpages of the website in the nav with some having dropdown content for specific locations on that corresponding webpage, if the webpage could use more usability  -->
+
+      <div class="globalnav" id="navID">
+      
+         <a href="index.html">Home</a>
+         <div class="dropdown">
+            <button class="dropbtn">
+               About
+               <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+               <a href="about.html">Main</a>
+               <a href="about.html#purpose">Our purpose</a>
+               <a href="about.html#community">Community</a>
+               <a href="about.html#outreach">Outreach</a>
+               <a href="about.html#have-fun">Have Fun</a>
+               <a href="about.html#faq">FAQs</a>
+            </div>
+         </div>
+         <div class="dropdown">
+            <button class="dropbtn">
+               Newsletter
+               <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+               <a href="newsletter.html">Cover</a>
+               <a href="newsletter.html#feature">Feature</a>
+               <a href="newsletter.html#interactive-quiz">Interactive Quiz</a>
+               <a href="newsletter.html#articles">Articles</a>
+            </div>
+         </div>
+         <a href="contact.html">Contact</a>
+         <div class="dropdown">
+            <button class="dropbtn">
+               Membership
+               <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+               <a href="membership.html">Log In</a>
+               <a href="membership.html">Registration</a>
+            </div>
+         </div>
+      
+         <a href="javascript:void(0);" style="font-size: 15px" class="icon" onclick="reactiveTopNav()">&#9776;</a>
+      </div>
+
+   <script src="../script/nav.js"></script>
+</body>
+</html>

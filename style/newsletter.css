@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* create one dark background for the whole page */
+body {
+  background: linear-gradient(#111111, #222222, #333333);
+  font-family: "Trispace", sans-serif;
+}
+/* darken and adjust banner at the top of the page */
+header {
+  background: linear-gradient(rgba(0, 0, 101, 0.6), rgba(0, 0, 101, 0.6)),
+    url(../media/newsletter/newsletter-banner.png);
+  background-size: cover;
+  background-position: center;
+  font-family: "Trispace", sans-serif;
+  height: 100vh;
+  /* new line added */
+  position: relative;
+}
+
+.newsletter-banner {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+}
+
+.index-banner h1 {
+  font-size: 40px;
+  color: black;
+}
+
+/* styling button in the banner begins */
+.btn {
+  margin-top: 10vh;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 13px;
+}
+
+.btn:hover {
+  border: 1px solid orangered;
+  background: orangered;
+  transition: 1s;
+}
+
+/* asteroid animation begins */
+.asteroids img {
+  width: 50px;
+  animation: asteroid 7s linear infinite;
+}
+/* adjust asteroids and hide at the start of the page navigation */
+.asteroids {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -100%;
+  visibility: hidden;
+}
+/* animate the astreroids and make visible */
+@keyframes asteroid {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+    visibility: visible;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vw);
+    opacity: 0;
+  }
+}
+/* have each of the asteroids identified by the respective children of the div rise at different times */
+.asteroids img:nth-child(1) {
+  animation-delay: 2s;
+  width: 25px;
+}
+.asteroids img:nth-child(2) {
+  animation-delay: 1s;
+}
+.asteroids img:nth-child(3) {
+  animation-delay: 3s;
+  width: 25px;
+}
+.asteroids img:nth-child(4) {
+  animation-delay: 4.5s;
+}
+.asteroids img:nth-child(5) {
+  animation-delay: 3s;
+}
+.asteroids img:nth-child(6) {
+  animation-delay: 6s;
+  width: 20px;
+}
+.asteroids img:nth-child(7) {
+  animation-delay: 7s;
+  width: 35px;
+}
+
+/* asteroid animation ends  */
+
+/* Feature PAGE STYLINGS begin */
+.feature-row {
+  /* move down from the top */
+  margin-top: 5%;
+  /* seemless transitions from horiontal to vertical */
+  display: flex;
+  /* even spacng along the main axis */
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  /* the boxed content will be organized vertically when in the small screen */
+  .feature-row {
+    flex-direction: column;
+  }
+}
+
+/* slight adjustments */
+.feature-content {
+  width: 80%;
+  margin: auto;
+  padding: 60px 0;
+}
+
+.feature-left {
+  flex-basis: 60%;
+}
+
+.feature-left img {
+  width: 100%;
+}
+
+.feature-left h2 {
+  background: #f44336;
+  color: white;
+  font-weight: 600;
+  margin: 30px 0;
+  padding: 7px 5px;
+  text-align: center;
+}
+
+.feature-left p {
+  color: White;
+  padding: 0;
+}
+
+.feature-right {
+  flex-basis: 32%;
+}
+
+.feature-right h3 {
+  background: #f44336;
+  color: white;
+  padding: 7px 0;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feature-right div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.feature-right p {
+  color: white;
+  padding: 0;
+}
+/* feature page stylings end */

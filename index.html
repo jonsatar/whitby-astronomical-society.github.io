@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+   <link rel="stylesheet" href="style/index.css">
+   <link rel="stylesheet" href="style/news.css">
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+   crossorigin="anonymous"></script>
+   
+   <!-- load the header and footer using jquery at the onset of the page load -->
+   <script>
+      $(function () {
+         $("nav").load("html-partitions/nav.html");
+         $(".slider").load("html-partitions/slider.html");
+         $("footer").load("html-partitions/footer.html");
+      });
+   </script>
+
+   <!-- Google Font faimlies Trispace font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+         <nav>
+            <!-- loaded from jquery -->
+           
+         </nav>
+
+
+   <header>   
+      <!-- overlap video in the header banner -->
+      <div class="video-container"
+      id="banner-video">
+         <video autoplay muted loop>
+         <source src="media/home/asteroids.mp4" type="video/mp4" />
+         </video>
+      </div>
+      <!-- banner content on top of images an video -->
+      <div class="index-banner">
+         <h1>Whitby Astronomical Society</h1>
+         <div class="satellite-box">
+            <img src="media/home/satellite.png" id="satellite" alt="A satellite image">
+            <img src="media/home/wave.png" id="wave" alt="EM wave emitted by satellite">
+         </div>
+         <!-- accessibility video toggle on and off -->
+         <a href="#" class="btn" onclick="videoFunction()">Toggle Video</a>
+         <a href="membership.html" class="btn">Join Today!</a>
+         
+      </div>
+   </header>
+
+
+   <div class="slider">
+      <!-- loaded from jquery -->
+   </div>
+
+   <section class="news">
+      <!-- the single horizontal axis of two images, one wide followed by a narrow  -->
+      <div class="news-row">
+         <div class="news-col wide">
+            <!-- first image that is wide -->
+            <img src="media/news/telescope-constellation.jpg" alt="A telescope views constellations.">
+            <!-- div below to overlay with translucent coloured background  on hover -->
+            <div class="news-layer">
+               <a href="membership.html"><h3>New Developments in Optical Imaging</h3></a>
+            </div>
+         </div>
+
+         <div class="news-col">
+            <!-- second image that is narrow image  -->
+            <img src="media/news/newtons-cradle.jpg" alt="Newtons cradle">
+            <!-- similarly overlaying div -->
+            <div class="news-layer">
+               <a href="membership.html"><h3>Physics Fundamentals </h3></a>
+               
+            </div>
+         </div>
+      </div>
+
+      <!-- a row of a narrow followed by wide news article  -->
+      <div class="news-row">
+         <div class="news-col">
+            <!-- first image narrow -->
+            <img src="media/news/aliens.jpg" alt="Alien">
+            <!-- colored overlay div -->
+            <div class="news-layer">
+               <a href="membership.html"><h3>Emerging Astrobiology</h3></a>
+            </div>
+         </div>
+         <div class="news-col wide">
+            <!-- second image wide  -->
+            <img src="media/news/james-webb.jpg" alt="James Webb hexagons">
+            <!-- similarly overlaying div -->
+            <div class="news-layer">
+               <a href="membership.html"><h3>James Webb Telescope Launches</h3></a>
+               
+            </div>
+         </div>
+      </div>
+
+      <!-- another row of all wide images -->
+      <div class="news-row">
+         <div class="news-col">
+            <!-- first image  -->
+            <img src="media/news/shooting-star.jpg" alt="Shooting Star in the sky">
+            <!-- image overlay -->
+            <div class="news-layer">
+               <a href="membership.html"><h3>Celestial Mechanics</h3></a>
+            </div>
+         </div>
+         <div class="news-col">
+            <!-- second image  -->
+            <img src="media/news/electric-sparks.jpg" alt="Electric sparks from globe.">
+            <!-- similarly overlaying div -->
+            <div class="news-layer">
+               <a href="membership.html"><h3>Science Center</h3></a>
+               
+            </div>
+         </div>
+         <div class="news-col">
+            <!-- third image  -->
+            <img src="media/news/simple-satellite-sky.jpg" alt="Radio Antenna faces space.">
+            <!-- similarly overlaying div -->
+            <div class="news-layer">
+               <a href="membership.html"><h3>Space Laboratories</h3></a>
+               
+            </div>
+         </div>
+      </div>
+
+
+      <!-- wide then narrow image -->
+      <div class="news-row">
+         <div class="news-col wide">
+            <!-- first image wide -->
+            <img src="media/news/viewing-stars.jpg" alt="Two people watch the stars">
+            <!-- this div below shall be used as an overlay with translucent coloured background to overlay the image, with some text as well, when cursor hovers above -->
+            <div class="news-layer">
+               <a href="membership.html"><h3>See the Stars for Yourself</h3></a>
+               
+            </div>
+         </div>
+
+         <div class="news-col">
+            <!-- second image  narrow-->
+            <img src="media/news/lecture.jpg" alt="People sit and listen.">
+            <!-- similarly overlaying div -->
+            <div class="news-layer">
+               <a href="membership.html"><h3>Learn about Space</h3></a>
+               
+            </div>
+         </div>
+      </div>
+
+
+
+      <!-- another row  -->
+      <div class="news-row">
+         <div class="news-col">
+            <!-- first image  -->
+            <img src="media/news/holding-hands.jpg" alt="Holding hands and watching the milky way">
+            <!-- this div below shall be used as an overlay with translucent coloured background to overlay the image, with some text as well, when cursor hovers above -->
+            <div class="news-layer">
+               <a href="membership.html"><h3>Engaging Others</h3></a>
+               
+            </div>
+         </div>
+         <div class="news-col wide">
+            <!-- second image  -->
+            <img src="media/news/solar-system.jpg" alt="The planets all aligned">
+            <!-- similarly overlaying div -->
+            <div class="news-layer">
+               <a href="membership.html"><h3>Our Beautiful Solar System</h3></a>
+               
+            </div>
+         </div>
+      </div>
+
+   </section>
+
+   <footer>
+      <!-- loaded from jquery -->
+   </footer>
+
+      <script src="script/toggle-video.js"></script>
+</body>
+</html>

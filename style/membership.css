@@ -1,0 +1,104 @@
+/* this styles the login and registration page called the membership page; class names directly match their function and are specified in the html file simply */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Trispace", sans-serif;
+}
+/* darkened body background and dit without stretch maintaining aspect ratio at the center of the body*/
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../media/membership/rock-sky.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.form-box {
+  width: 380px;
+  height: 450px;
+  position: relative;
+  transform: translateY(7%);
+  margin: 6% auto;
+  background: white;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.button-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #002ac2;
+  border-radius: 30px;
+}
+
+.toggle-btn {
+  padding: 10px 22px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #add8e6, #add8e6);
+  border-radius: 30px;
+  transition: 0.5s;
+  color: white;
+}
+
+.input-group {
+  top: 179px;
+  position: absolute;
+  width: 279px;
+  transition: 0.5s;
+}
+
+.input-field {
+  width: 99%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+/* fit content for the submission portion */
+.submit-btn {
+  width: 85%;
+  padding: 9px 29px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #001a6d, #002ac2);
+  border: 0;
+  outline: none;
+  border-radius: 29px;
+  color: white;
+}
+
+.check-box {
+  margin: 29px 9px 29px 0;
+}
+
+.form-box span {
+  color: #777;
+  font-size: 13px;
+  bottom: 67px;
+  position: absolute;
+}
+
+#login {
+  left: 51px;
+}
+
+#register {
+  left: 449px;
+}

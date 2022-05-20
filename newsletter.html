@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+   <link rel="stylesheet" href="style/about.css">
+   <link rel="stylesheet" href="style/newsletter.css">
+
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+   
+   <!-- load the header and footer using jquery at the onset of the page load -->
+   <script>
+      $(function () {
+         $("nav").load("html-partitions/nav.html");
+         $("footer").load("html-partitions/footer.html");
+         $(".quiz").load("html-partitions/quiz.html");
+      });
+   </script>
+
+   <!-- Google Font faimlies Trispace font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <header>
+      <nav>
+         <!-- loaded from jquery -->
+      </nav>
+      <!-- divide the banner for the newsletter -->
+      <div class="newsletter-banner">
+         <h1>Newsletter</h1>
+         <a href="#feature" class="btn">Begin Reading</a>
+         <a href="#interactive-quiz" class="btn">Take/Continue Quiz</a>
+
+         <!-- a section of asteroid images of varying size to be animated up the page -->
+         <div class="asteroids">
+            <img src="media/newsletter/asteroid.png" alt="An asteroid">
+            <img src="media/newsletter/asteroid.png" alt="An asteroid">
+            <img src="media/newsletter/asteroid.png" alt="An asteroid">
+            <img src="media/newsletter/asteroid.png" alt="An asteroid">
+            <img src="media/newsletter/asteroid.png" alt="An asteroid">
+            <img src="media/newsletter/asteroid.png" alt="An asteroid">
+            <img src="media/newsletter/asteroid.png" alt="An asteroid">
+         </div>
+      </div>
+   </header>
+         <!-- section for main article with image -->
+         <section class="feature-content" id="feature">
+            <div class="feature-row">
+               <div class="feature-left">
+                  <img src="media/newsletter/astronaut-earth.jpg" alt=" An astronaut hovers above the earth">
+                  <h2>The Pale Blue Dot by Carl Sagan</h2>
+                  <p>Look again at that dot. That's here. That's home. That's us. On it
+                  everyone you love, everyone you know, everyone you ever heard of,
+                  every human being who ever was, lived out their lives. The aggregate
+                  of our joy and suffering, thousands of confident religions,
+                  ideologies, and economic doctrines, every hunter and forager, every
+                  hero and coward, every creator and destroyer of civilization, every
+                  king and peasant, every young couple in love, every mother and father,
+                  hopeful child, inventor and explorer, every teacher of morals, every
+                  corrupt politician, every "superstar," every "supreme leader," every
+                  saint and sinner in the history of our species lived there -- on a
+                  mote of dust suspended in a sunbeam.</p>
+                  <br>
+                  <p>The Earth is a very small stage in a vast cosmic arena. Think of the
+                  rivers of blood spilled by all those generals and emperors so that, in
+                  glory and triumph, they could become the momentary masters of a
+                  fraction of a dot. Think of the endless cruelties visited by the
+                  inhabitants of one corner of this pixel on the scarcely
+                  distinguishable inhabitants of some other corner, how frequent their
+                  misunderstandings, how eager they are to kill one another, how fervent
+                  their hatreds.
+                  </p>
+                  <br>
+                  <p>Our posturings, our imagined self-importance, the delusion that we
+                  have some privileged position in the Universe, are challenged by this
+                  point of pale light. Our planet is a lonely speck in the great
+                  enveloping cosmic dark. In our obscurity, in all this vastness, there
+                  is no hint that help will come from elsewhere to save us from
+                  ourselves.</p>
+                  <br>
+                  <p>The Earth is the only world known so far to harbor life. There is
+                  nowhere else, at least in the near future, to which our species could
+                  migrate. Visit, yes. Settle, not yet. Like it or not, for the moment
+                  the Earth is where we make our stand.
+                  </p>
+                  <p>
+                     It has been said that astronomy is a humbling and character-building
+                     experience. There is perhaps no better demonstration of the folly of
+                     human conceits than this distant image of our tiny world. To me, it
+                     underscores our responsibility to deal more kindly with one another,
+                     and to preserve and cherish the pale blue dot, the only home we've
+                     ever known.
+                  </p>
+                  <br>
+                  <br>
+
+                  <a href="membership.html" class="hero-btn">Read More</a>
+               </div>
+         
+               <br>
+               <br>
+         
+
+            <!--  Three tables of interesting information on space-->
+               <div class="feature-right">
+                  <h3>Timeline</h3>
+                  <div>
+                     <span>2000 BC</span>
+                     <span> Inner Planets Discovered</span>
+                  </div>
+                  <div>
+                     <span>1781 AD</span>
+                     <span>Uranus Discovered</span>
+                  </div>
+                  <div>
+                     <span>1846 AD</span>
+                     <span>Neptune Discovered</span>
+                  </div>
+                  <div>
+                     <span>1930 AD</span>
+                     <span>Pluto Discovered</span>
+                  </div>
+                  <div>
+                     <span>1957 AD</span>
+                     <span>Sputnik Launched</span>
+                  </div>
+                  <div>
+                     <span>1969 AD</span>
+                     <span>Man Lands on the Moon</span>
+                  </div>
+                  <div>
+                     <span>1976 AD</span>
+                     <span>Spacecraft Lands on Mars</span>
+                  </div>
+                  <div>
+                     <span>2005 AD</span>
+                     <span>Spacecraft Lands on Titan</span>
+                  </div>
+                  <div>
+                     <span>2015 AD</span>
+                     <span>Probe visits Pluto.</span>
+                  </div>
+                  <br>
+
+                  <h3>Important Dates Summer 2022</h3>
+                  <div>
+                     <span>09 Jul</span>
+                     <span>Potluck Luncheon</span>
+                  </div>
+                  <div>
+                     <span>23 Jul</span>
+                     <span>Ontario Science Center visit</span>
+                  </div>
+                  <div>
+                     <span>03 Aug</span>
+                     <span>Dr. Smith speaks</span>
+                  </div>
+                  <div>
+                     <span>27 Aug</span>
+                     <span>Science seminar</span>
+                  </div>
+                  <div>
+                     <span>Saturdays</span>
+                     <span>Stargazing Night</span>
+                  </div>
+                  <div>
+                     <span>07 Sep</span>
+                     <span>Under the Stars Pub Night</span>
+                  </div>
+
+
+                  <br>
+
+
+                  <h3>March 2022 Moon Phases</h3>
+                  <div>
+                     <span>02 Mar</span>
+                     <span>New Moon</span>
+                  </div>
+                  <div>
+                     <span>06 Mar</span>
+                     <span>Eaxing Crescent</span>
+                  </div>
+                  <div>
+                     <span>10 Mar</span>
+                     <span>First Quarter</span>
+                  </div>
+                  <div>
+                     <span>13 Mar </span>
+                     <span>Waxing Gibbous</span>
+                  </div>
+                  <div>
+                     <span>17 Mar</span>
+                     <span>Full Moon</span>
+                  </div>
+                  <div>
+                     <span>21 Mar</span>
+                     <span>Waning Gibbous</span>
+                  </div>
+                  <div>
+                     <span>25 Mar</span>
+                     <span>Third Quarter</span>
+                  </div>
+                  <div>
+                     <span>28 Mar</span>
+                     <span>Waning Crescent</span>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+
+   <div class="quiz" id="interactive-quiz">
+      <!-- loaded by the jquery -->
+   </div>
+
+   <!-- apply the same class from the about section for the short samples of articles provided with links to the registration page -->
+      <section class="about-us" id="articles">
+         <!-- first sample article -->
+         <div class="about-row">
+            <div class="about-col">
+               <h2>James Webb Telescope Launches</h2>
+               <p>The James Webb telescope is poised to build upon the accomplishments of the Hubble telescope launched 30 years ago. It sees mainly in the non-visible infrared. The telescope was successfully launched on Christmas day 2021 to excellent fanfare and is now circling comfortably at its Lagrange point more than a million miles from Earth.
+               </p>
+               <a href="membership.html" class="hero-btn">Read More</a>
+            </div>
+            <div class="about-col">
+               <img src="media/newsletter/james-webb.jpg" alt="A man watches the partially complete james webb telescope">
+            </div>
+         </div>
+         <!-- second sample article -->
+         <div class="about-row">
+            <div class="about-col">
+               <h2>Ethereal Nature of the Cosmos Sparks Interest in All Ages and Other Subjects</h2>
+               <p>Even more fundamental to the astronomical studies are the physical sciences traditionally taught in public school systems. When taught they often lack the rigor or motivation required to engage students effectively. This can be remedied by providing some insight into the strange occurrences throughout our vast universe.
+               </p>
+               <a href="membership.html" class="hero-btn">Read More</a>
+            </div>
+            <div class="about-col">
+               <img src="media/newsletter/child-stares-stars.jpg" alt="A child lays back and watches the stars">
+            </div>
+         </div>
+         <!-- third sample article -->
+         <div class="about-row">
+            <div class="about-col">
+               <h2>Local School Children Celebrate Space, Crafts, and Food </h2>
+               <p>Local school children have a wonderful field trip to the Society and engage in several activities while having fun! The children made planet and star shaped cookies while also hearing from some visiting Astronomers. It was a blast and the students can't wait to return next year! 
+               </p>
+               <a href="membership.html" class="hero-btn">Read More</a>
+            </div>
+            <div class="about-col">
+               <img src="media/newsletter/space-food.jpg" alt="Baked goods in the shape of space objects">
+            </div>
+         </div>
+         <!-- fourth sample article -->
+         <div class="about-row">
+            <div class="about-col">
+               <h2>Reusable Rockets Pave Future Space Travel</h2>
+               <p>With the cost of space flight exorbitant but crucial to our understanding of the galaxy, the recent phenomena of reusable rockets has made much more possible the chances of reaching the rest of the heavenly bodies located throughout our solar system.
+               </p>
+               <a href="membership.html" class="hero-btn">Read More</a>
+            </div>
+            <div class="about-col">
+               <img src="media/newsletter/reusable-rocket.jpg" alt="A rocket launches from the ground.">
+            </div>
+         </div>
+         <!-- fifth sample article -->
+         <div class="about-row">
+            <div class="about-col">
+               <h2>Surviving on the International Space Station</h2>
+               <p>Scientists aboard the International Space Station have designed clever ways to sustain themselves high above the Earth's atmosphere. 
+               </p>
+               <a href="membership.html" class="hero-btn">Read More</a>
+            </div>
+            <div class="about-col">
+               <img src="media/newsletter/docked-space-station.jpg" alt="Arm extends to satellite from a space vehicle">
+            </div>
+         </div>
+      </section>   
+   <footer>
+      <!-- loaded by the jquery -->
+   </footer>
+</body>
+</html>

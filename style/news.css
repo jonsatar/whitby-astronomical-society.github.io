@@ -1,0 +1,90 @@
+/* to be applied across the whole campus section by accessing its class */
+.news {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.news-row {
+  /* move the three boxes down by 5% from the title header of this course section*/
+  margin-top: 5%;
+  /* moves the paragraphs from verticaly stacked to align across a row according to the flexbox model asjusting their sizes accordingly on user adjustment of the website  */
+  display: flex;
+  /* even spacng along the main axis */
+  justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+  /* the boxed content will be organized vertically when in the small screen */
+  .news-row {
+    flex-direction: column;
+  }
+}
+
+/* styled similarly to the previous columns in the prior section */
+.news-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  /* remove sections of the image that do not fit */
+  overflow: hidden;
+}
+
+.wide {
+  flex-basis: 64%;
+}
+
+.news-col:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* make the image fit the width of the boxed horizontally aligned div */
+.news-col img {
+  /* this will allow for the upcoming colored image overlay will not extend below the image when hovering */
+  display: block;
+
+  /* maintain aspect ratio of image fitting the div*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* the layering component */
+.news-layer {
+  /* this transparent background will be turned to to coloured when the below selector engages the hover by the cursor */
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* allows for the color change from transparent upon the cursor hovering */
+.news-layer:hover {
+  background: rgba(226, 0, 0, 0.7);
+}
+
+/* the following below code shall allow for the city name that goes over the image to slide up from the bottom in an animation */
+.news-layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.news-layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+  text-decoration: underline;
+  cursor: pointer;
+}
